@@ -30,11 +30,10 @@ public class ScreenshotUtilities {
 	    }
 		TakesScreenshot takeScreenshot = (TakesScreenshot)driver; //typecasting the driver as getScreenshotAs method coming from the RemoteDriver not WebDriver.
 		File Screenshot = takeScreenshot.getScreenshotAs(OutputType.FILE);
-		File dstFile = new File("./Screenshots/img1.jpg");
+		File dstFile = new File("./Screenshots/"+fileName+".jpg");
 		try {
 			FileUtils.copyFile(Screenshot, dstFile);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
