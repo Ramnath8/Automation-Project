@@ -2,24 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-07T20:03:35 IST" name="Default suite" finished-at="2025-08-07T20:04:31 IST" duration-ms="55911">
+  <suite started-at="2025-08-07T21:35:22 IST" name="Default suite" finished-at="2025-08-07T21:35:37 IST" duration-ms="15385">
     <groups>
     </groups>
-    <test started-at="2025-08-07T20:03:35 IST" name="Default test" finished-at="2025-08-07T20:04:31 IST" duration-ms="55911">
-      <class name="Test.LoginPageValidation">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.LoginPageValidation@298a5e20]" started-at="2025-08-07T20:03:35 IST" name="Setup" finished-at="2025-08-07T20:03:40 IST" duration-ms="5195" status="PASS">
+    <test started-at="2025-08-07T21:35:22 IST" name="Default test" finished-at="2025-08-07T21:35:37 IST" duration-ms="15385">
+      <class name="Test.HomePageValidation">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.HomePageValidation@3c77d488]" started-at="2025-08-07T21:35:22 IST" name="Setup" finished-at="2025-08-07T21:35:33 IST" duration-ms="11650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="sampleTest()[pri:0, instance:Test.LoginPageValidation@298a5e20]" started-at="2025-08-07T20:03:40 IST" name="sampleTest" finished-at="2025-08-07T20:04:30 IST" duration-ms="50386" status="PASS">
+        <test-method signature="Homepageverification(java.lang.String,java.lang.String)[pri:0, instance:Test.HomePageValidation@3c77d488]" started-at="2025-08-07T21:35:33 IST" name="Homepageverification" finished-at="2025-08-07T21:35:37 IST" duration-ms="3282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sampleTest -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.LoginPageValidation@298a5e20]" started-at="2025-08-07T20:04:30 IST" name="Teardown" finished-at="2025-08-07T20:04:31 IST" duration-ms="272" status="PASS">
+        </test-method> <!-- Homepageverification -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.HomePageValidation@3c77d488]" started-at="2025-08-07T21:35:37 IST" name="Teardown" finished-at="2025-08-07T21:35:37 IST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- Test.LoginPageValidation -->
+      </class> <!-- Test.HomePageValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
