@@ -7,7 +7,7 @@
         <methods>
           <include name="Setup"/>
           <include name="Teardown"/>
-          <include name="LoginTest"/>
+          <include name="PageValidation"/>
         </methods>
       </class> <!-- Test.LoginPageValidation -->
     </classes>
