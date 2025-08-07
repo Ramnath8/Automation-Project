@@ -4,7 +4,7 @@ import Pages.LoginPage;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
+import Utilities.ScreenshotUtilities;
 import BaseTest.BaseTest;
 
 public class LoginPageValidation extends BaseTest{
@@ -24,4 +24,11 @@ public class LoginPageValidation extends BaseTest{
 		page.loginpageValidation();
 	}
 	
+	@Test
+	public void sampleTest() throws Exception {
+		Thread.sleep(5000);
+		ScreenshotUtilities screen = new ScreenshotUtilities(driver);
+		screen.TakeScreenshot("Failedcases");
+		
+	}
 }

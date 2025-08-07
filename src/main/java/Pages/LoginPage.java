@@ -22,7 +22,7 @@ public class LoginPage {
 		 WebElement Usenamelabelpara = driver.findElement(By.xpath("//p[contains(.,'Admin')]"));
 		 WebElement Passwordlabelpara = driver.findElement(By.xpath("//p[contains(.,'admin123')]"));
 		 WebElement LinkText = driver.findElement(By.xpath("//p[contains(.,'Forgot your')]"));
-		 wait.Eleemnttobevisible(driver, Header, 10);
+		 //wait.Eleemnttobevisible(driver, Header, 10);
 		 System.out.println(OrangeLogo.isDisplayed());
 		 System.out.println(Usenamelabelpara.isDisplayed());
 		 System.out.println(Passwordlabelpara.isDisplayed());
@@ -35,8 +35,8 @@ public class LoginPage {
 		 WebElement UsernameInput = driver.findElement(By.xpath("//input[@placeholder='Username']"));
 		 WebElement PasswordInput = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		 WebElement Login = driver.findElement(By.xpath("//button[@type='submit']"));
-		 WaitUtilities wait = new WaitUtilities(driver);
-		 wait.Eleemnttobevisible(driver, Login, 5);
+		// WaitUtilities wait = new WaitUtilities(driver);
+		 WaitUtilities.Eleemnttobevisible(driver, Login, 5);
 		 UsernameInput.sendKeys(Username);
 		 PasswordInput.sendKeys(Password);
 		 Login.click();
