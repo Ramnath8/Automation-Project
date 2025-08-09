@@ -1,0 +1,62 @@
+package Pages;
+import Utilities.WaitUtilities;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AdvancedPage {
+	protected WebDriver  driver;
+
+	public AdvancedPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public void AdvancePageNavigation() {
+		try {
+			WebElement UpgradeButton = driver.findElement(By.xpath("//a[@target='_blank']//button[@type='button']"));
+			WaitUtilities.Elementtobeclickable(driver, UpgradeButton, 15);
+			System.out.println(UpgradeButton.getTagName());
+			UpgradeButton.click();
+			String parentWindow = driver.getWindowHandle();
+			Set<String> allwindows = driver.getWindowHandles();
+			for (String window: allwindows) {
+				driver.switchTo().window(window);
+				System.out.println(window);
+				if (driver.getTitle().contains("Upgrde to Advanced")) {
+
+					System.out.println("NewWindow Handle: "+driver.getTitle());
+					break;
+				}
+			}
+			WebElement HRMLogo = driver.findElement(By.xpath("//img[@alt='OrangeHRM Logo']"));
+			System.out.println(HRMLogo.isDisplayed());
+			System.out.print(parentWindow);
+			WebElement Solutionslink = driver.findElement(By.xpath("//a[contains(.,'Solutions')]"));
+			WebElement WhyOrangeHRMlink = driver.findElement(By.xpath("//a[contains(.,'Why OrangeHRM')]"));
+			WebElement Resourceslink = driver.findElement(By.xpath("//a[text()='Resources']"));
+			WebElement CompanyLink = driver.findElement(By.xpath("//a[text()='Company']"));
+			WebElement Pricinglink = driver.findElement(By.xpath("//a[text()='Pricing']"));
+			WebElement WebImage = driver.findElement(By.xpath("//ul[@class='navbar-nav ms-auto web-menu']//img[@alt='language- icon']"));
+			WebElement  Languagedropdown = driver.findElement(By.xpath("//ul//select[@name='locale']"));
+			WebElement BookaFreeDemolink = driver.findElement(By.xpath("//ul//button[text()='Book a Free Demo']"));
+			System.out.println(Solutionslink.isDisplayed());
+			System.out.println(WhyOrangeHRMlink.isDisplayed());
+			System.out.println(Resourceslink.isDisplayed());
+			System.out.println(CompanyLink.isDisplayed());
+			System.out.println(Pricinglink.isDisplayed());
+			System.out.println(WebImage.isDisplayed());
+			System.out.println(Languagedropdown.isDisplayed());
+			System.out.println(BookaFreeDemolink.isDisplayed());
+
+		}catch (NoSuchElementException e) {
+			System.out.print(e.getMessage());
+		}
+
+
+	}
+
+}

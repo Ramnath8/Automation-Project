@@ -36,7 +36,7 @@ public class LoginPage {
 		 WebElement PasswordInput = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		 WebElement Login = driver.findElement(By.xpath("//button[@type='submit']"));
 		// WaitUtilities wait = new WaitUtilities(driver);
-		 WaitUtilities.Eleemnttobevisible(driver, Login, 5);
+		 WaitUtilities.Elementtobevisible(driver, Login, 5);
 		 UsernameInput.sendKeys(Username);
 		 PasswordInput.sendKeys(Password);
 		 Login.click();
