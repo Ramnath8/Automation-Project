@@ -1,8 +1,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Practice Test">
+	<listeners>
+    <listener class-name="Utilities.ListenersUtilities"/>
+	</listeners>
   <test name="Login Tests">
     <classes>
       <class name="Test.LoginPageValidation"/>
+    </classes>
+  </test>
+  <test name="HomePage Vaildation Tests">
+    <classes>
+      <class name="Test.HomePageValidation"/>
+    </classes>
+  </test>
+  <test name="UpgradePageValidation">
+    <classes>
+      <class name="Test.UpgradeWindowValidation"/>
     </classes>
   </test>
 </suite>

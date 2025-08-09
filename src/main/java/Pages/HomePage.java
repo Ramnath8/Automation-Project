@@ -25,7 +25,7 @@ public class HomePage {
 		WebElement EmployeeDistributionByLocationHeading = driver.findElement(By.xpath("//p[contains(.,'Employee Distribution by Location')]"));
 		
 		try {
-			WaitUtilities.Eleemnttobevisible(driver, DashBoardHeading, 10);
+			WaitUtilities.Elementtobevisible(driver, DashBoardHeading, 10);
 			if (DashBoardHeading.isDisplayed()) {
 				System.out.println(TimeAtWorkHeading.isDisplayed());
 				System.out.println(MyActionsHeading.isDisplayed());

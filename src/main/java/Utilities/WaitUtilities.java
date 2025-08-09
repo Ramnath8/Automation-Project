@@ -16,12 +16,12 @@ public class WaitUtilities {
 		this.driver =driver;
 	}
 	
-	public static WebElement Eleemnttobevisible(WebDriver driver, WebElement Element, int Timeinseconds) {
+	public static WebElement Elementtobevisible(WebDriver driver, WebElement Element, int Timeinseconds) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Timeinseconds));
 		return wait.until(ExpectedConditions.visibilityOf(Element));
 	}
 	
-	public static WebElement Eleemnttobeclickable(WebDriver driver, WebElement Element, int Timeinseconds) {
+	public static WebElement Elementtobeclickable(WebDriver driver, WebElement Element, int Timeinseconds) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Timeinseconds));
 		return wait.until(ExpectedConditions.elementToBeClickable(Element));
 	}

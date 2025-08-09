@@ -2,36 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-07T21:35:22 IST" name="Default suite" finished-at="2025-08-07T21:35:37 IST" duration-ms="15385">
+  <suite started-at="2025-08-09T19:17:06 IST" name="Default suite" finished-at="2025-08-09T19:17:24 IST" duration-ms="18463">
     <groups>
     </groups>
-    <test started-at="2025-08-07T21:35:22 IST" name="Default test" finished-at="2025-08-07T21:35:37 IST" duration-ms="15385">
-      <class name="Test.HomePageValidation">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.HomePageValidation@3c77d488]" started-at="2025-08-07T21:35:22 IST" name="Setup" finished-at="2025-08-07T21:35:33 IST" duration-ms="11650" status="PASS">
+    <test started-at="2025-08-09T19:17:06 IST" name="Default test" finished-at="2025-08-09T19:17:24 IST" duration-ms="18463">
+      <class name="Test.UpgradeWindowValidation">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.UpgradeWindowValidation@63376bed]" started-at="2025-08-09T19:17:06 IST" name="Setup" finished-at="2025-08-09T19:17:13 IST" duration-ms="7060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Homepageverification(java.lang.String,java.lang.String)[pri:0, instance:Test.HomePageValidation@3c77d488]" started-at="2025-08-07T21:35:33 IST" name="Homepageverification" finished-at="2025-08-07T21:35:37 IST" duration-ms="3282" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="UpgradeWindowPage()[pri:0, instance:Test.UpgradeWindowValidation@63376bed]" started-at="2025-08-09T19:17:13 IST" name="UpgradeWindowPage" finished-at="2025-08-09T19:17:24 IST" duration-ms="10864" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Homepageverification -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.HomePageValidation@3c77d488]" started-at="2025-08-07T21:35:37 IST" name="Teardown" finished-at="2025-08-07T21:35:37 IST" duration-ms="374" status="PASS">
+        </test-method> <!-- UpgradeWindowPage -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.UpgradeWindowValidation@63376bed]" started-at="2025-08-09T19:17:24 IST" name="Teardown" finished-at="2025-08-09T19:17:24 IST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- Test.HomePageValidation -->
+      </class> <!-- Test.UpgradeWindowValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
