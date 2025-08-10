@@ -6,8 +6,8 @@ import org.testng.ITestResult;
 public class ListenersUtilities implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
-		
-		ScreenshotUtilities Screenshot = new ScreenshotUtilities();
+		WebDriver driver = DriverManager.getDriver();
+		ScreenshotUtilities Screenshot = new ScreenshotUtilities(driver);
 		Screenshot.TakeScreenshot("FailedCases");
 	}
 

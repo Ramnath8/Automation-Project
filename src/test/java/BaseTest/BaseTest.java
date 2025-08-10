@@ -7,12 +7,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import Utilities.DriverManager;
+
 public class BaseTest {
 	protected WebDriver driver;
 	
 	@BeforeMethod
 	public void Setup() {
 		driver = new ChromeDriver();
+		DriverManager.setDriver(driver);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
