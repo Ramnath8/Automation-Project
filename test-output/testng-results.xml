@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-10T16:09:20 IST" name="Default suite" finished-at="2025-08-10T16:09:44 IST" duration-ms="23770">
+  <suite started-at="2025-08-10T22:30:24 IST" name="Practice Test" finished-at="2025-08-10T22:31:34 IST" duration-ms="69882">
     <groups>
     </groups>
-    <test started-at="2025-08-10T16:09:20 IST" name="Default test" finished-at="2025-08-10T16:09:44 IST" duration-ms="23770">
-      <class name="Test.UpgradeWindowValidation">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.UpgradeWindowValidation@63376bed]" started-at="2025-08-10T16:09:20 IST" name="Setup" finished-at="2025-08-10T16:09:30 IST" duration-ms="10083" status="PASS">
+    <test started-at="2025-08-10T22:30:24 IST" name="Login Tests" finished-at="2025-08-10T22:31:04 IST" duration-ms="39554">
+      <class name="Test.LoginPageValidation">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:25 IST" name="Setup" finished-at="2025-08-10T22:30:37 IST" duration-ms="12230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="UpgradeWindowPage()[pri:0, instance:Test.UpgradeWindowValidation@63376bed]" started-at="2025-08-10T16:09:30 IST" name="UpgradeWindowPage" finished-at="2025-08-10T16:09:43 IST" duration-ms="13176" status="PASS">
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:37 IST" name="LoginTest" finished-at="2025-08-10T22:30:40 IST" duration-ms="2899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:40 IST" name="Teardown" finished-at="2025-08-10T22:30:40 IST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:40 IST" name="Setup" finished-at="2025-08-10T22:30:47 IST" duration-ms="7092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="PageValidation()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:47 IST" name="PageValidation" finished-at="2025-08-10T22:30:48 IST" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageValidation -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:48 IST" name="Teardown" finished-at="2025-08-10T22:30:48 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:48 IST" name="Setup" finished-at="2025-08-10T22:30:58 IST" duration-ms="10343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="sampleTest()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:30:58 IST" name="sampleTest" finished-at="2025-08-10T22:31:04 IST" duration-ms="5238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.LoginPageValidation@2e385cce]" started-at="2025-08-10T22:31:04 IST" name="Teardown" finished-at="2025-08-10T22:31:04 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Test.LoginPageValidation -->
+    </test> <!-- Login Tests -->
+    <test started-at="2025-08-10T22:31:04 IST" name="HomePage Vaildation Tests" finished-at="2025-08-10T22:31:14 IST" duration-ms="9877">
+      <class name="Test.HomePageValidation">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.HomePageValidation@17fc391b]" started-at="2025-08-10T22:31:04 IST" name="Setup" finished-at="2025-08-10T22:31:09 IST" duration-ms="5295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Homepageverification(java.lang.String,java.lang.String)[pri:0, instance:Test.HomePageValidation@17fc391b]" started-at="2025-08-10T22:31:09 IST" name="Homepageverification" finished-at="2025-08-10T22:31:14 IST" duration-ms="4324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepageverification -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.HomePageValidation@17fc391b]" started-at="2025-08-10T22:31:14 IST" name="Teardown" finished-at="2025-08-10T22:31:14 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Test.HomePageValidation -->
+    </test> <!-- HomePage Vaildation Tests -->
+    <test started-at="2025-08-10T22:31:14 IST" name="UpgradePageValidation" finished-at="2025-08-10T22:31:34 IST" duration-ms="20409">
+      <class name="Test.UpgradeWindowValidation">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test.UpgradeWindowValidation@514646ef]" started-at="2025-08-10T22:31:14 IST" name="Setup" finished-at="2025-08-10T22:31:22 IST" duration-ms="8487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="UpgradeWindowPage()[pri:0, instance:Test.UpgradeWindowValidation@514646ef]" started-at="2025-08-10T22:31:22 IST" name="UpgradeWindowPage" finished-at="2025-08-10T22:31:34 IST" duration-ms="11569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpgradeWindowPage -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.UpgradeWindowValidation@63376bed]" started-at="2025-08-10T16:09:43 IST" name="Teardown" finished-at="2025-08-10T16:09:44 IST" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Test.UpgradeWindowValidation@514646ef]" started-at="2025-08-10T22:31:34 IST" name="Teardown" finished-at="2025-08-10T22:31:34 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- Test.UpgradeWindowValidation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- UpgradePageValidation -->
+  </suite> <!-- Practice Test -->
 </testng-results>

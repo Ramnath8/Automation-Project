@@ -11,24 +11,21 @@ public class LoginPageValidation extends BaseTest{
 	
 	
 
-	@Test
+	@Test (priority =1)
 	@Parameters({"username", "Password"})
 	public void LoginTest(@Optional("Admin")String Username, @Optional("admin123") String Password) {
 		LoginPage page = new LoginPage(driver);
 		page.Login(Username, Password);
 	}
 	
-	@Test
+	@Test(priority=2, dependsOnMethods="LoginTest")
 	public void PageValidation() {
 		LoginPage page = new LoginPage(driver);
 		page.loginpageValidation();
 	}
 	
-	@Test
-	public void sampleTest() throws Exception {
-		Thread.sleep(5000);
-		ScreenshotUtilities screen = new ScreenshotUtilities(driver);
-		screen.TakeScreenshot("Failedcases");
+	@Test ()
+	public void ResetPasswordValidation() {
 		
 	}
 }

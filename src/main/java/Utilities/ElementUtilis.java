@@ -32,6 +32,17 @@ public class ElementUtilis {
 			}
 		} catch (TimeoutException e) {
 			throw new TimeoutException(ElementName+" Element not loaded in specifie time");
+		} catch (NoSuchElementException e) {
+			throw new NoSuchElementException (ElementName+" Element not loaded in specifie time");
+		}
+	}
+	
+	public static void ElementDisplayed2(WebDriver driver, String xpath, String ElementName) {
+		WebElement Element = driver.findElement(By.xpath(xpath));
+		if (Element.isDisplayed()) {
+			System.out.println(ElementName+" is displayed");
+		} else {
+			throw new NoSuchElementException(ElementName + " is not displayed");
 		}
 	}
 }

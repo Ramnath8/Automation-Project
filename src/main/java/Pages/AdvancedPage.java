@@ -33,17 +33,6 @@ public class AdvancedPage {
 				}
 			}
 			ElementUtilis.waitforElement(driver, "//img[@alt='OrangeHRM Logo']", "HRMLogo");
-			//WebElement HRMLogo = driver.findElement(By.xpath("//img[@alt='OrangeHRM Logo']"));
-			//System.out.println(HRMLogo.isDisplayed());
-//			System.out.print(parentWindow);
-//			WebElement Solutionslink = driver.findElement(By.xpath("//a[contains(.,'Solutions')]"));
-//			WebElement WhyOrangeHRMlink = driver.findElement(By.xpath("//a[contains(.,'Why OrangeHRM')]"));
-//			WebElement Resourceslink = driver.findElement(By.xpath("//a[text()='Resources']"));
-//			WebElement CompanyLink = driver.findElement(By.xpath("//a[text()='Company']"));
-//			WebElement Pricinglink = driver.findElement(By.xpath("//a[text()='Pricing']"));
-//			WebElement WebImage = driver.findElement(By.xpath("//ul[@class='navbar-nav ms-auto web-menu']//img[@alt='language- icon']"));
-//			WebElement  Languagedropdown = driver.findElement(By.xpath("//ul//select[@name='locale']"));
-//			WebElement BookaFreeDemolink = driver.findElement(By.xpath("//ul//button[text()='Book a Free Demo']"));
 			ElementUtilis.ElementDisplayed(driver, "//a[contains(.,'Solutions')]", "Solutionslink");
 			ElementUtilis.ElementDisplayed(driver, "//a[contains(.,'Why OrangeHRM')]", "WhyOrangeHRMlink");
 			ElementUtilis.ElementDisplayed(driver, "//a[text()='Resources']", "Resourceslink");
@@ -52,14 +41,6 @@ public class AdvancedPage {
 			ElementUtilis.ElementDisplayed(driver, "//ul//select[@name='locale']", "LanguageDropdown");
 			ElementUtilis.ElementDisplayed(driver, "//ul//button[text()='Book a Free Demo']", "BookaFreeDemo");
 			ElementUtilis.ElementDisplayed(driver, "//a[text()='Pricing']", "PricingLink");
-//			System.out.println(Solutionslink.isDisplayed());
-//			System.out.println(WhyOrangeHRMlink.isDisplayed());
-//			System.out.println(Resourceslink.isDisplayed());
-//			System.out.println(CompanyLink.isDisplayed());
-//			System.out.println(Pricinglink.isDisplayed());
-//			System.out.println(WebImage.isDisplayed());
-//			System.out.println(Languagedropdown.isDisplayed());
-//			System.out.println(BookaFreeDemolink.isDisplayed());
 
 		}catch (NoSuchElementException e) {
 			System.out.print(e.getMessage());
