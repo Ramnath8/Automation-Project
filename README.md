@@ -1,4 +1,4 @@
-# OrangeHRM-Hybrid-Automation
+# Hybrid-AutomationFramework
 ## Description
 This is a scalable Hybrid Automation Framework developed using Java, Selenium WebDriver, TestNG, and Maven. The project follows the Page Object Model (POM) design pattern and uses a data-driven approach for flexibility and maintainability. The automation is performed on the OrangeHRM Demo Website, simulating real-world web testing scenarios.
 
